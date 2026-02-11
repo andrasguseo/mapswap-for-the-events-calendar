@@ -2,7 +2,6 @@
 
 namespace AGU\Openstreetmap_For_Tec;
 
-use AGU\Openstreetmap_For_Tec\Plugin;
 class Main {
 	/**
 	 * Hook common actions.
@@ -30,7 +29,7 @@ class Main {
 		foreach ( $this->templates() as $template => $new_template ) {
 			add_filter( 'tribe_get_template_part_path_' . $template, function ( $file, $slug, $name ) use ( $new_template ) {
 				// Return the path for our file.
-				$new_template = trailingslashit( dirname( __FILE__, 3 ) ) . $new_template;
+				$new_template = Plugin::get()->plugin_path . $new_template;
 				return $new_template;
 			}, 10, 3 );
 		}
