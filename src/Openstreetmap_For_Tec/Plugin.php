@@ -68,6 +68,15 @@ class Plugin {
 	public Main $main;
 
 	/**
+	 * Stores Setting class instance.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @var Settings
+	 */
+	public Settings $settings;
+
+	/**
 	 * Constructor.
 	 *
 	 * @since 1.0.0
@@ -144,8 +153,10 @@ class Plugin {
 	protected function register(): void {
 		//$this->sample = new Sample();
 		$this->main = new Main();
+		$this->settings = new Settings();
 
 		//$this->sample->hook();
 		$this->main->hook();
+		$this->settings->hook();
 	}
 }
