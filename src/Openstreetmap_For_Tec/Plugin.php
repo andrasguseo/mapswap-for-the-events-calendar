@@ -59,6 +59,15 @@ class Plugin {
 	public Sample $sample;
 
 	/**
+	 * Stores Main class instance.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @var Main
+	 */
+	public Main $main;
+
+	/**
 	 * Constructor.
 	 *
 	 * @since 1.0.0
@@ -133,8 +142,10 @@ class Plugin {
 	 * @return void
 	 */
 	protected function register(): void {
-		$this->sample = new Sample();
+		//$this->sample = new Sample();
+		$this->main = new Main();
 
 		//$this->sample->hook();
+		$this->main->hook();
 	}
 }
