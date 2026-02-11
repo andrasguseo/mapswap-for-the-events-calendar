@@ -1,9 +1,9 @@
 <?php
 
-function plugin_scaffolding_load() {
+function openstreetmap_for_tec_load() {
 	// Last file that needs to be loaded manually.
-	require_once dirname( __DIR__ ) . '/Plugin_Scaffolding/Plugin.php';
+	require_once dirname( __DIR__ ) . '/Openstreetmap_For_Tec/Plugin.php';
 
 	// Load the plugin, autoloading happens here.
-	AGU\Plugin_Scaffolding\Plugin::boot( PLUGIN_SCAFFOLDING_FILE );
+	AGU\Openstreetmap_For_Tec\Plugin::boot( OPENSTREETMAP_FOR_TEC_FILE );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "andras-guseo/plugin-scaffolding",
+  "name": "andras-guseo/openstreetmap-for-tec",
   "minimum-stability": "stable",
   "type": "wordpress-plugin",
   "authors": [
@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AGU\\Plugin_Scaffolding\\": "src/Plugin_Scaffolding"
+      "AGU\\Openstreetmap_For_Tec\\": "src/Openstreetmap_For_Tec"
     }
   },
   "require-dev": {

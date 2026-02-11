@@ -1,6 +1,6 @@
 <?php
 
-namespace AGU\Plugin_Scaffolding;
+namespace AGU\Openstreetmap_For_Tec;
 
 class Plugin {
 

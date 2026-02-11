@@ -1,6 +1,6 @@
 <?php
 
-namespace AGU\Plugin_Scaffolding;
+namespace AGU\Openstreetmap_For_Tec;
 
 class Sample {
 
@@ -25,7 +25,7 @@ class Sample {
 	 * @return void
 	 */
 	function enqueue_admin_scripts() {
-		wp_enqueue_script( 'plugin-scaffolding', plugins_url( '/src/resources/js/plugin-scaffolding.js', dirname( __FILE__, 2 ) ), [], null, true );
+		wp_enqueue_script( 'openstreetmap-for-tec', plugins_url( '/src/resources/js/openstreetmap-for-tec.js', dirname( __FILE__, 2 ) ), [], null, true );
 	}
 
 	/**
@@ -36,7 +36,7 @@ class Sample {
 	 * @return void
 	 */
 	function enqueue_admin_styles() {
-		wp_enqueue_style( 'plugin-scaffolding', plugins_url( '/src/resources/css/plugin-scaffolding.css', dirname( __FILE__, 2 ) ) );
+		wp_enqueue_style( 'openstreetmap-for-tec', plugins_url( '/src/resources/css/openstreetmap-for-tec.css', dirname( __FILE__, 2 ) ) );
 	}
 
 }
