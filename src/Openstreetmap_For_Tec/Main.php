@@ -45,8 +45,6 @@ class Main {
 		$templates = [
 			'modules/map.php'             => 'src/views/modules/open-street-map.php',
 			'modules/map-basic.php'       => 'src/views/modules/open-street-map.php',
-			'pro/map/gmap-container.php'  => 'src/views/pro/map/osmap-container.php',
-			'events-pro/v2/venue/map.php' => 'src/views/pro/map/osmap-container.php',
 		];
 
 
