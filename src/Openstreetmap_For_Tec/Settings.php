@@ -26,7 +26,7 @@ class Settings {
 	 * @return void
 	 */
 	public function hook(): void {
-		add_filter( 'tec_events_settings_display_maps_section', [ $this, 'add_settings' ], 999 );
+		add_filter( 'tec_events_settings_display_maps_section', [ $this, 'add_settings' ], 100 );
 	}
 
 	/**
