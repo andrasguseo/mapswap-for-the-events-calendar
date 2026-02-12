@@ -10,50 +10,55 @@ class Main {
 	 *
 	 * @return void
 	 */
-	public function hook(): void {
+	public function hook():void {
 		// Enqueue scripts
-		add_filter( 'tribe_template_path_list', [ $this, 'template_locations' ], 10, 2 );
+		add_action( 'init', [ $this, 'common_setup' ] );
 	}
 
 	/**
-	 * Set up the template override folder for the extension.
-	 *
-	 * @param                  $folders
-	 * @param \Tribe__Template $template
+	 * Do the things to override the templates.
+	 */
+	public function common_setup(): void {
+		$this->set_up_templates();
+	}
+
+	/**
+	 * Filters templates to use our overrides.
+	 */
+	private function set_up_templates(): void {
+		foreach ( $this->templates() as $template => $new_template ) {
+			add_filter( 'tribe_get_template_part_path_' . $template, function ( $file, $slug, $name ) use ( $new_template ) {
+				// Return the path for our file.
+				$new_template = Plugin::get()->plugin_path . $new_template;
+				return $new_template;
+			}, 10, 3 );
+		}
+	}
+
+	/**
+	 * The list of The Events Calendar's template files to override with
+	 * which of this plugin's template files.
 	 *
 	 * @return array
 	 */
-	public function template_locations( $folders, \Tribe__Template $template ) {
-		// Which file namespace your plugin will use.
-		$plugin_name = 'openstreetmap-for-tec';
-
-		/**
-		 * Which order we should load your plugin files at. Plugin in which the file was loaded from = 20.
-		 * Events Pro = 25. Tickets = 17
-		 */
-		$priority = 5;
-
-		// Which folder in your plugin the customizations will be loaded from.
-		$custom_folder[] = 'src/views';
-
-		// Builds the correct file path to look for.
-		$plugin_path = array_merge(
-			(array) Plugin::get()->plugin_path,
-			(array) $custom_folder,
-			array_diff( $template->get_template_folder(), [ 'src', 'views' ] )
-		);
-
-		/*
-		 * Custom loading location for overwriting file loading.
-		 */
-		$folders[ $plugin_name ] = [
-			'id'        => $plugin_name,
-			'namespace' => $plugin_name, // Only set this if you want to overwrite theme namespacing
-			'priority'  => $priority,
-			'path'      => $plugin_path,
+	private function templates(): array {
+		$templates = [
+			'modules/map.php'             => 'src/views/modules/open-street-map.php',
+			'modules/map-basic.php'       => 'src/views/modules/open-street-map.php',
 		];
 
-		return $folders;
-	}
 
+		/**
+		 * Filters the templates to override.
+		 *
+		 * @since 1.0.0
+		 *
+		 * @var array $templates The list of templates to override.
+		 *                       Key: The original template file.
+		 *                       Value: The new template file.
+		 */
+		$templates = apply_filters( 'openstreetmap_for_tec_templates', $templates );
+
+		return $templates;
+	}
 }
