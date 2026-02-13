@@ -151,11 +151,9 @@ class Plugin {
 	 * @return void
 	 */
 	protected function register(): void {
-		//$this->sample = new Sample();
 		$this->main = new Main();
 		$this->settings = new Settings();
 
-		//$this->sample->hook();
 		$this->main->hook();
 		$this->settings->hook();
 	}

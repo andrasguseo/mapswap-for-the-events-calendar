@@ -14,7 +14,7 @@
  * Requires plugins:    the-events-calendar, leaflet-map
  */
 
-define ( 'OPENSTREETMAP_FOR_TEC_FILE', __FILE__ );
+define( 'OPENSTREETMAP_FOR_TEC_FILE', __FILE__ );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
