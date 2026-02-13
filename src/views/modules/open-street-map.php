@@ -24,6 +24,7 @@ $zoomlevel = $zoomlevel > 18 ? 18 : $zoomlevel;
 $zoomcontrol = tribe_get_option( 'osm_for_tec_zoom_control_single', false );
 
 $mapheight = tribe_get_option( 'osm_for_tec_map_container_height_single', '250' );
+$mapwidth  = tribe_get_option( 'osm_for_tec_map_container_width_single', '250' );
 
 $venue_id = tribe_get_venue_id();
 
@@ -37,7 +38,7 @@ if ( class_exists( 'Tribe__Events__Pro__Geo_Loc' ) && 1 == get_post_meta( $venue
 	$address = 'address="' . $address . '"';
 }
 
-$shortcode = '[leaflet-map ' . $address . ' zoom=' . $zoomlevel . ' zoomcontrol=' . $zoomcontrol . ' height=' . $mapheight . ']';
+$shortcode = '[leaflet-map ' . $address . ' zoom=' . $zoomlevel . ' zoomcontrol=' . $zoomcontrol . ' height=' . $mapheight . ' width=' . $mapwidth . ']';
 $shortcode .= '[leaflet-marker]';
 
 echo do_shortcode( $shortcode );

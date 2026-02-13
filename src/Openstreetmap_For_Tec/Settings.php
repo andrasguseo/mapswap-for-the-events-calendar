@@ -63,7 +63,7 @@ class Settings {
 		$fields = [
 			Settings::OPTION_PREFIX . 'general'              => [
 				'type' => 'html',
-				'html' => '<h3 class="tec-settings-form__section-header tec-settings-form__section-header--sub">' . esc_html__( 'Single Event', 'openstreetmap-for-tec' ) . '</h3>',
+				'html' => '<h3 class="tec-settings-form__section-header tec-settings-form__section-header--sub">' . esc_html__( 'Single Event Page', 'openstreetmap-for-tec' ) . '</h3>',
 			],
 			Settings::OPTION_PREFIX . 'zoom_control_single'  => [
 				'type'            => 'checkbox_bool',
@@ -81,7 +81,15 @@ class Settings {
 			Settings::OPTION_PREFIX . 'map_container_height_single' => [
 				'type'            => 'text',
 				'label'           => esc_html_x( 'Default height of map', 'option label', 'openstreetmap-for-tec' ),
-				'tooltip'         => esc_html__( 'Defaults to 250px when left empty.', 'openstreetmap-for-tec' ),
+				'tooltip'         => esc_html__( 'Defaults to 250px when left empty.', 'openstreetmap-for-tec' ) . $this->get_tooltip_note(),
+				'size'            => 'small',
+				'validation_type' => 'number_or_percent',
+				'can_be_empty'    => true,
+			],
+			Settings::OPTION_PREFIX . 'map_container_width_single' => [
+				'type'            => 'text',
+				'label'           => esc_html_x( 'Default width of map', 'option label', 'openstreetmap-for-tec' ),
+				'tooltip'         => esc_html__( 'Defaults to 250px when left empty.', 'openstreetmap-for-tec' ) . $this->get_tooltip_note(),
 				'size'            => 'small',
 				'validation_type' => 'number_or_percent',
 				'can_be_empty'    => true,
@@ -135,6 +143,18 @@ class Settings {
 		$new_settings = array_merge( $new_maps_header, $settings, $this->add_new_settings_fields() );
 
 		return $new_settings;
+	}
+
+	/**
+	 * @return string
+	 */
+	private function get_tooltip_note(): string {
+		$tooltip = '<br>';
+		$tooltip .= '<em>';
+		$tooltip .= esc_html__( 'The actual dimensions can be limited by the styling of the container.', 'openstreetmap-for-tec' );
+		$tooltip .= '</em>';
+
+		return $tooltip;
 	}
 
 }
