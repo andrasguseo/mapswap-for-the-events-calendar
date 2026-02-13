@@ -16,14 +16,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-$zoomlevel = tribe_get_option( 'tribe_ext_openstreetmap_zoom_level_single', '15' );
+$zoomlevel = tribe_get_option( 'osm_for_tec_zoom_level_single', '15' );
 
 // Zoom levels 19 and 20 don't render the map.
 $zoomlevel = $zoomlevel > 18 ? 18 : $zoomlevel;
 
-$zoomcontrol = tribe_get_option( 'tribe_ext_openstreetmap_zoom_control', '' );
+$zoomcontrol = tribe_get_option( 'osm_for_tec_zoom_control_single', false );
 
-$mapheight = tribe_get_option( 'tribe_ext_openstreetmap_map_container_height', '' );
+$mapheight = tribe_get_option( 'osm_for_tec_map_container_height_single', '250' );
 
 $venue_id = tribe_get_venue_id();
 
@@ -39,8 +39,5 @@ if ( class_exists( 'Tribe__Events__Pro__Geo_Loc' ) && 1 == get_post_meta( $venue
 
 $shortcode = '[leaflet-map ' . $address . ' zoom=' . $zoomlevel . ' zoomcontrol=' . $zoomcontrol . ' height=' . $mapheight . ']';
 $shortcode .= '[leaflet-marker]';
-
-/* For testing / debugging */
-//var_dump($shortcode);
 
 echo do_shortcode( $shortcode );

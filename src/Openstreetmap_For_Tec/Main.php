@@ -55,8 +55,10 @@ class Main {
 	 */
 	private function templates(): array {
 		$templates = [
-			'modules/map.php'       => 'src/views/modules/open-street-map.php',
+			// Template used with the default Google Maps API key.
 			'modules/map-basic.php' => 'src/views/modules/open-street-map.php',
+			// Template used with a custom Google Maps API key.
+			'modules/map.php'       => 'src/views/modules/open-street-map.php',
 		];
 
 
