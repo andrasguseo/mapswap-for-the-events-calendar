@@ -53,7 +53,7 @@ Yes, the plugin replaces maps whether you're using [The Events Calendar](https:/
 
 = Does this work with The Events Calendar Pro? =
 
-Yes, it should work with both the free and Pro versions of [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). Note however, that this plugin does not replace maps provided by Events Calendar Pro (e.g. Map view, Venue page).
+Yes, it should work with both the free and Pro versions of [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). Note however, that this plugin does not replace maps provided by Events Calendar Pro (e.g., Map view, Venue page).
 
 = Will this work with my theme? =
 
