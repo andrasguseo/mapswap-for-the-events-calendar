@@ -96,7 +96,7 @@ class Settings {
 			],
 		];
 
-		$fields = tribe( 'settings' )->wrap_section_content( 'tec-events-settings-calendar-template', $fields );
+		$fields = tribe( 'settings' )->wrap_section_content( 'tec-events-settings-calendar-maps-osm-single', $fields );
 
 		return array_merge( $header, $fields );
 	}
@@ -148,7 +148,7 @@ class Settings {
 	/**
 	 * @return string
 	 */
-	private function get_tooltip_note(): string {
+	public static function get_tooltip_note(): string {
 		$tooltip = '<br>';
 		$tooltip .= '<em>';
 		$tooltip .= esc_html__( 'The actual dimensions can be limited by the styling of the container.', 'openstreetmap-for-tec' );
