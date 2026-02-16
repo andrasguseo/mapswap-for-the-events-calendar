@@ -77,6 +77,6 @@ We're always interested in your feedback. The [Issues](https://github.com/andras
 
 == Changelog ==
 
-= [1.0.0] 2026-02-14 =
+= [1.0.0] 2026-02-16 =
 
 * Initial release

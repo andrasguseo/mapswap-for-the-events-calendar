@@ -3,7 +3,9 @@
  * Template used for maps embedded within single events and venues.
  * This is a template override that replaces Google Maps with OpenStreetMap.
  *
- *     [your-theme]/tribe-events/modules/map.php
+ * This file overrides the following files:
+ *     the-events-calendar/src/views/modules/map.php
+ *     the-events-calendar/src/views/modules/map-basic.php
  *
  * @version 4.6.19
  *
@@ -19,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $zoomlevel = tribe_get_option( 'osm_for_tec_zoom_level_single', '15' );
 
 // Zoom levels 19 and 20 don't render the map.
-$zoomlevel = $zoomlevel > 18 ? 18 : $zoomlevel;
+$zoomlevel = min( $zoomlevel, 18 );
 
 $zoomcontrol = tribe_get_option( 'osm_for_tec_zoom_control_single', false );
 

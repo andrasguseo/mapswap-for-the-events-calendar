@@ -7,6 +7,7 @@ use TEC\Common\Admin\Entities\Heading;
 use TEC\Common\Admin\Entities\Paragraph;
 use TEC\Common\Admin\Entities\Plain_Text;
 use Tribe\Utils\Element_Classes as Classes;
+use Tribe\Utils\Element_Attributes as Attributes;
 
 class Settings {
 	/**
@@ -46,7 +47,8 @@ class Settings {
 					new Heading(
 						_x( 'OpenStreetMap', 'OpenStreetMap settings header', 'openstreetmap-for-tec' ),
 						2,
-						new Classes( [ 'tec-settings-form__section-header' ] )
+						new Classes( [ 'tec-settings-form__section-header' ] ),
+						new Attributes( [ 'id' => 'osm-settings' ] ),
 					),
 					( new Paragraph( new Classes( [ 'tec-settings-form__section-description' ] ) ) )->add_child(
 						new Plain_Text(
