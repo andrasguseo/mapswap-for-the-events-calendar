@@ -1,5 +1,4 @@
 <?php
-
 namespace AGU\Openstreetmap_For_Tec;
 
 use TEC\Common\Admin\Entities\Div;
@@ -8,6 +7,10 @@ use TEC\Common\Admin\Entities\Paragraph;
 use TEC\Common\Admin\Entities\Plain_Text;
 use Tribe\Utils\Element_Classes as Classes;
 use Tribe\Utils\Element_Attributes as Attributes;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
 class Settings {
 	/**

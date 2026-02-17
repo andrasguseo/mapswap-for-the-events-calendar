@@ -3,11 +3,11 @@ Contributors: aguseo
 Donate link: https://paypal.me/guseo
 Tags: openstreetmap, map, events, calendar
 Requires at least: 6.7
-Tested up to: 6.9.1
+Tested up to: 6.9
 Requires PHP: 8.0
 Stable tag: 1.0.0
-License: GPL version 3 or any later version
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 OpenStreetMap for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
 

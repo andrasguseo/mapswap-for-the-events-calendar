@@ -5,11 +5,11 @@
  * Version:             1.0.0
  * Author:              Andras Guseo
  * Author URI:          https://andrasguseo.com
- * License:             GPL-3.0+
- * License URI:         http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:             GPLv2 or later
+ * License URI:         https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain:         openstreetmap-for-tec
  * Domain Path:         /languages
- * Requires at least:   5.0
+ * Requires at least:   6.7
  * Requires PHP:        8.0
  * Requires plugins:    the-events-calendar, leaflet-map
  */

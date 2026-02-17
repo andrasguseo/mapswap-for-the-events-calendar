@@ -2,6 +2,9 @@
 
 namespace AGU\Openstreetmap_For_Tec;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 class Main {
 	/**
 	 * Hook common actions.
