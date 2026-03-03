@@ -14,11 +14,11 @@
  * Requires plugins:    the-events-calendar, leaflet-map
  */
 
-define( 'ALTERNATIVE_MAPS_FOR_TEC_FILE', __FILE__ );
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
+
+define( 'ALTERNATIVE_MAPS_FOR_TEC_FILE', __FILE__ );
 
 require_once 'src/functions/load.php';
 
