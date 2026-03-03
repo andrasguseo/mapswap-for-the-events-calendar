@@ -1,6 +1,6 @@
 <?php
 
-namespace AGU\Openstreetmap_For_Tec;
+namespace AGU\Alternative_Maps_For_Tec;
 
 class Plugin {
 

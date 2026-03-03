@@ -1,4 +1,4 @@
-=== OpenStreetMap for TEC ===
+=== Alternative Maps for The Events Calendar ===
 Contributors: aguseo
 Donate link: https://paypal.me/guseo
 Tags: openstreetmap, map, events, calendar
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-OpenStreetMap for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
+Alternative Maps for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
 
 == Description ==
 
-OpenStreetMap for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
+Alternative Maps for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
 
 It requires the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin and [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/).
 
@@ -73,7 +73,7 @@ No, this plugin only changes the map display. All venue data, geocoding, and loc
 
 = What if I experience problems? =
 
-We're always interested in your feedback. The [Issues](https://github.com/andrasguseo/openstreetmap-for-tec/issues) page is the best place to flag any issues. We do our best to respond to all issues.
+We're always interested in your feedback. The [Issues](https://github.com/andrasguseo/alternative-maps-for-tec/issues) page is the best place to flag any issues. We do our best to respond to all issues.
 
 == Changelog ==
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace AGU\Openstreetmap_For_Tec;
+namespace AGU\Alternative_Maps_For_Tec;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -76,7 +76,7 @@ class Main {
 		 *                       Key: The original template file.
 		 *                       Value: The new template file.
 		 */
-		$templates = apply_filters( 'openstreetmap_for_tec_templates', $templates );
+		$templates = apply_filters( 'alternative_maps_for_tec_templates', $templates );
 
 		return $templates;
 	}
@@ -100,8 +100,8 @@ class Main {
 			$link = sprintf(
 				'<a class="tribe-events-osm" href="%1$s" title="%2$s" target="_blank" rel="noreferrer noopener">%3$s</a>%4$s',
 				$map_link,
-				esc_html__( 'Click to view it on OpenStreetMap', 'openstreetmap-for-tec' ),
-				esc_html__( '+ OpenStreetMap', 'openstreetmap-for-tec' ),
+				esc_html__( 'Click to view it on OpenStreetMap', 'alternative-maps-for-tec' ),
+				esc_html__( '+ OpenStreetMap', 'alternative-maps-for-tec' ),
 				'<span class="dashicons dashicons-external"></span>'
 			);
 		}

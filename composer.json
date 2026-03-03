@@ -1,5 +1,5 @@
 {
-  "name": "andras-guseo/openstreetmap-for-tec",
+  "name": "andras-guseo/alternative-maps-for-tec",
   "minimum-stability": "stable",
   "type": "wordpress-plugin",
   "authors": [
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AGU\\Openstreetmap_For_Tec\\": "src/Openstreetmap_For_Tec"
+      "AGU\\Alternative_Maps_For_Tec\\": "src/Alternative_Maps_For_Tec"
     }
   },
   "require-dev": {
