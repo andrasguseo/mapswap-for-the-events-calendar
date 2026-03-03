@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
-Alternative Maps for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
+Alternative Maps for The Events Calendar replaces Google Maps with an alternative map provider on the single event pages. Currently supports OpenStreetMap.
 
 == Description ==
 
-Alternative Maps for The Events Calendar replaces Google Maps with OpenStreetMap on the single event pages.
+Alternative Maps for The Events Calendar replaces Google Maps with an alternative map provider on the single event pages. Currently supports OpenStreetMap.
 
 It requires the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin and [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/).
 
@@ -34,6 +34,10 @@ No, this plugin requires [The Events Calendar](https://wordpress.org/plugins/the
 = Do I need the Leaflet Map plugin? =
 
 Yes, the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin is required for this plugin to function properly. OpenStreetMap is rendered using the Leaflet library provided by the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin.
+
+= What map providers are currently supported? =
+
+At the moment, only OpenStreetMap is supported. There are plans to add support for other map providers in the future. If you want support for a specific provider, please let us know on our [Issues](https://github.com/andrasguseo/alternative-maps-for-tec/issues) page.
 
 = Will this affect Google Maps on other parts of my site? =
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:         Alternative Maps for The Events Calendar
- * Description:         Replaces Google Maps with OpenStreetMap in The Events Calendar.
+ * Description:         Replaces Google Maps with an alternative map provider in The Events Calendar.
  * Version:             1.0.0
  * Author:              Andras Guseo
  * Author URI:          https://andrasguseo.com

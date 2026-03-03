@@ -1,0 +1,102 @@
+# Copyright (C) 2026 Andras Guseo
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Alternative Maps for The Events Calendar 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/alternative-maps-for-tec\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-03T09:18:54+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: alternative-maps-for-tec\n"
+
+#. Plugin Name of the plugin
+#: alternative-maps-for-tec.php
+msgid "Alternative Maps for The Events Calendar"
+msgstr ""
+
+#. Description of the plugin
+#: alternative-maps-for-tec.php
+msgid "Replaces Google Maps with an alternative map provider in The Events Calendar."
+msgstr ""
+
+#. Author of the plugin
+#: alternative-maps-for-tec.php
+msgid "Andras Guseo"
+msgstr ""
+
+#. Author URI of the plugin
+#: alternative-maps-for-tec.php
+msgid "https://andrasguseo.com"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Main.php:103
+msgid "Click to view it on OpenStreetMap"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Main.php:104
+msgid "+ OpenStreetMap"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:51
+msgctxt "OpenStreetMap settings header"
+msgid "OpenStreetMap"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:58
+msgid "These are the settings for the Alternative Maps for The Events Calendar plugin."
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:71
+msgid "Single Event Page"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:75
+msgctxt "option label"
+msgid "Enable zoom control"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:76
+msgid "Check to enable zoom control buttons on the map."
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:81
+msgctxt "option label"
+msgid "Default zoom level"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:82
+msgid "0 = zoomed out; 18 = zoomed in."
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:88
+msgctxt "option label"
+msgid "Default height of map"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:89
+#: src/Alternative_Maps_For_Tec/Settings.php:97
+msgid "Defaults to 250px when left empty."
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:96
+msgctxt "option label"
+msgid "Default width of map"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:125
+msgctxt "Maps display settings header"
+msgid "Maps"
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:131
+msgid "The settings below control the display of maps for your events."
+msgstr ""
+
+#: src/Alternative_Maps_For_Tec/Settings.php:159
+msgid "The actual dimensions can be limited by the styling of the container."
+msgstr ""
