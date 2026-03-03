@@ -56,7 +56,7 @@ class Settings {
 					( new Paragraph( new Classes( [ 'tec-settings-form__section-description' ] ) ) )->add_child(
 						new Plain_Text(
 							__(
-								'These are the settings for the Alternative Maps for The Events Calendar plugin.',
+								'These are the settings for OpenStreetMap.',
 								'alternative-maps-for-tec'
 							)
 						)
