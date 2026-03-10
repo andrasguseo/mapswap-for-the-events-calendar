@@ -79,6 +79,20 @@ No, this plugin only changes the map display. All venue data, geocoding, and loc
 
 We're always interested in your feedback. The [Support](https://wordpress.org/support/plugin/mapswap-for-the-events-calendar/) page is the best place to flag any issues. We do our best to respond to all issues.
 
+== External Services ==
+
+This plugin connects to OpenStreetMap to display an interactive map on single event pages. When a visitor views an event page with a venue address, the plugin generates a link to OpenStreetMap using that address so the map can be rendered.
+
+**What data is sent:** The venue address entered in The Events Calendar is included in the request URL sent to OpenStreetMap's servers.
+
+**When it is sent:** Every time a visitor loads a single event page that has a venue with an address.
+
+**Service provider:** OpenStreetMap Foundation
+
+* Website: https://www.openstreetmap.org
+* Terms of Use: https://wiki.osmfoundation.org/wiki/Terms_of_Use
+* Privacy Policy: https://wiki.osmfoundation.org/wiki/Privacy_Policy
+
 == Changelog ==
 
 = [1.0.0] 2026-03-03 =
