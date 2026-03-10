@@ -18,15 +18,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-$zoomlevel = tribe_get_option( 'osm_for_tec_zoom_level_single', '15' );
+$zoomlevel = tribe_get_option( 'mapswap_for_tec_zoom_level_single', '15' );
 
 // Zoom levels 19 and 20 don't render the map.
 $zoomlevel = min( $zoomlevel, 18 );
 
-$zoomcontrol = tribe_get_option( 'osm_for_tec_zoom_control_single', false );
+$zoomcontrol = tribe_get_option( 'mapswap_for_tec_zoom_control_single', false );
 
-$mapheight = tribe_get_option( 'osm_for_tec_map_container_height_single', '250' );
-$mapwidth  = tribe_get_option( 'osm_for_tec_map_container_width_single', '250' );
+$mapheight = tribe_get_option( 'mapswap_for_tec_map_container_height_single', '250' );
+$mapwidth  = tribe_get_option( 'mapswap_for_tec_map_container_width_single', '250' );
 
 $venue_id = tribe_get_venue_id();
 

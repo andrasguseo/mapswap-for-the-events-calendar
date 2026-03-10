@@ -1,6 +1,6 @@
 <?php
 
-namespace AGU\Alternative_Maps_For_Tec;
+namespace AGU\MapSwap_For_TEC;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

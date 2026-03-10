@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name:         Alternative Maps for The Events Calendar
+ * Plugin Name:         MapSwap for The Events Calendar
  * Description:         Replaces Google Maps with an alternative map provider in The Events Calendar.
  * Version:             1.0.0
  * Author:              Andras Guseo
  * Author URI:          https://andrasguseo.com
  * License:             GPLv2 or later
  * License URI:         https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * Text Domain:         alternative-maps-for-tec
+ * Text Domain:         mapswap-for-the-events-calendar
  * Domain Path:         /languages
  * Requires at least:   6.7
  * Requires PHP:        8.0
@@ -18,8 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-define( 'ALTERNATIVE_MAPS_FOR_TEC_FILE', __FILE__ );
+define( 'MAPSWAP_FOR_TEC_FILE', __FILE__ );
 
 require_once 'src/functions/load.php';
 
-add_action( 'plugins_loaded', 'alternative_maps_for_tec_load' );
+add_action( 'plugins_loaded', 'mapswap_for_tec_load' );

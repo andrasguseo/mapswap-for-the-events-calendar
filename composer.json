@@ -1,5 +1,5 @@
 {
-  "name": "andras-guseo/alternative-maps-for-tec",
+  "name": "andras-guseo/mapswap-for-the-events-calendar",
   "minimum-stability": "stable",
   "type": "wordpress-plugin",
   "authors": [
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AGU\\Alternative_Maps_For_Tec\\": "src/Alternative_Maps_For_Tec"
+      "AGU\\MapSwap_For_TEC\\": "src/MapSwap_For_TEC"
     }
   },
   "require-dev": {
