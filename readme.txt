@@ -37,7 +37,7 @@ Yes, the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin is req
 
 = What map providers are currently supported? =
 
-At the moment, only OpenStreetMap is supported. There are plans to add support for other map providers in the future. If you want support for a specific provider, please let us know on our [Issues](https://github.com/andrasguseo/mapswap-for-the-events-calendar/issues) page.
+At the moment, only OpenStreetMap is supported. There are plans to add support for other map providers in the future. If you want support for a specific provider, please let us know in the [Support Forum](https://wordpress.org/support/plugin/mapswap-for-the-events-calendar/).
 
 = Will this affect Google Maps on other parts of my site? =
 
@@ -77,7 +77,7 @@ No, this plugin only changes the map display. All venue data, geocoding, and loc
 
 = What if I experience problems? =
 
-We're always interested in your feedback. The [Issues](https://github.com/andrasguseo/mapswap-for-the-events-calendar/issues) page is the best place to flag any issues. We do our best to respond to all issues.
+We're always interested in your feedback. The [Support](https://wordpress.org/support/plugin/mapswap-for-the-events-calendar/) page is the best place to flag any issues. We do our best to respond to all issues.
 
 == Changelog ==
 
