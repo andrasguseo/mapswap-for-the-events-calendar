@@ -1,5 +1,5 @@
 {
-  "name": "andras-guseo/plugin-scaffolding",
+  "name": "andras-guseo/mapswap-for-the-events-calendar",
   "minimum-stability": "stable",
   "type": "wordpress-plugin",
   "authors": [
@@ -13,14 +13,18 @@
     "preferred-install": "dist",
     "platform": {
       "php": "8.0"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
   "autoload": {
     "psr-4": {
-      "AGU\\Plugin_Scaffolding\\": "src/Plugin_Scaffolding"
+      "AGU\\MapSwap_For_TEC\\": "src/MapSwap_For_TEC"
     }
   },
   "require-dev": {
-    "php": ">=8.0"
+    "php": ">=8.0",
+    "automattic/vipwpcs": "^3.0"
   }
 }
