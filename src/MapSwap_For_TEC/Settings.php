@@ -1,4 +1,5 @@
 <?php
+
 namespace AGU\MapSwap_For_TEC;
 
 use TEC\Common\Admin\Entities\Div;
@@ -65,18 +66,31 @@ class Settings {
 			)
 		];
 
-		$fields = [
-			Settings::OPTION_PREFIX . 'general'              => [
+		$fields_general = [
+			Settings::OPTION_PREFIX . 'title_general'  => [
+				'type' => 'html',
+				'html' => '<h3 class="tec-settings-form__section-header tec-settings-form__section-header--sub">' . esc_html__( 'General', 'mapswap-for-the-events-calendar' ) . '</h3>',
+			],
+			Settings::OPTION_PREFIX . 'general_enable' => [
+				'type'            => 'checkbox_bool',
+				'label'           => esc_html_x( 'Enable OpenStreetMap', 'option label', 'mapswap-for-the-events-calendar' ),
+				'tooltip'         => esc_html__( 'Check to use OpenStreetMap instead of Google Maps.', 'mapswap-for-the-events-calendar' ),
+				'validation_type' => 'boolean',
+			],
+		];
+
+		$fields_single = [
+			Settings::OPTION_PREFIX . 'title_single'                => [
 				'type' => 'html',
 				'html' => '<h3 class="tec-settings-form__section-header tec-settings-form__section-header--sub">' . esc_html__( 'Single Event Page', 'mapswap-for-the-events-calendar' ) . '</h3>',
 			],
-			Settings::OPTION_PREFIX . 'zoom_control_single'  => [
+			Settings::OPTION_PREFIX . 'zoom_control_single'         => [
 				'type'            => 'checkbox_bool',
 				'label'           => esc_html_x( 'Enable zoom control', 'option label', 'mapswap-for-the-events-calendar' ),
 				'tooltip'         => esc_html__( 'Check to enable zoom control buttons on the map.', 'mapswap-for-the-events-calendar' ),
 				'validation_type' => 'boolean',
 			],
-			Settings::OPTION_PREFIX . 'zoom_level_single'    => [
+			Settings::OPTION_PREFIX . 'zoom_level_single'           => [
 				'type'            => 'text',
 				'label'           => esc_html_x( 'Default zoom level', 'option label', 'mapswap-for-the-events-calendar' ),
 				'tooltip'         => esc_html__( '0 = zoomed out; 18 = zoomed in.', 'mapswap-for-the-events-calendar' ),
@@ -91,7 +105,7 @@ class Settings {
 				'validation_type' => 'number_or_percent',
 				'can_be_empty'    => true,
 			],
-			Settings::OPTION_PREFIX . 'map_container_width_single' => [
+			Settings::OPTION_PREFIX . 'map_container_width_single'  => [
 				'type'            => 'text',
 				'label'           => esc_html_x( 'Default width of map', 'option label', 'mapswap-for-the-events-calendar' ),
 				'tooltip'         => esc_html__( 'Defaults to 250px when left empty.', 'mapswap-for-the-events-calendar' ) . $this->get_tooltip_note(),
@@ -101,9 +115,10 @@ class Settings {
 			],
 		];
 
-		$fields = tribe( 'settings' )->wrap_section_content( 'tec-events-settings-calendar-maps-osm-single', $fields );
+		$fields_general = tribe( 'settings' )->wrap_section_content( 'tec-events-settings-calendar-maps-osm-general', $fields_general );
+		$fields_single  = tribe( 'settings' )->wrap_section_content( 'tec-events-settings-calendar-maps-osm-single', $fields_single );
 
-		return array_merge( $header, $fields );
+		return array_merge( $header, $fields_general, $fields_single );
 	}
 
 	/**
