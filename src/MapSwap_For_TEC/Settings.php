@@ -32,6 +32,28 @@ class Settings {
 	 */
 	public function hook(): void {
 		add_filter( 'tec_events_settings_display_maps_section', [ $this, 'add_settings' ], 100 );
+		add_filter( 'plugin_action_links_mapswap-for-the-events-calendar/mapswap-for-the-events-calendar.php', [ $this, 'add_action_links' ] );
+	}
+
+	/**
+	 * Add a "Settings" link to the plugin action links on the Plugins page.
+	 *
+	 * @since 1.1.0
+	 *
+	 * @param array $links Existing plugin action links.
+	 *
+	 * @return array Modified plugin action links.
+	 */
+	public function add_action_links( array $links ): array {
+		$settings_link = sprintf(
+			'<a href="%s">%s</a>',
+			esc_url( admin_url( 'edit.php?post_type=tribe_events&page=tec-events-settings&tab=display-maps-tab#osm-settings' ) ),
+			esc_html__( 'Settings', 'mapswap-for-the-events-calendar' )
+		);
+
+		$links[] = $settings_link;
+
+		return $links;
 	}
 
 	/**
@@ -93,9 +115,11 @@ class Settings {
 			Settings::OPTION_PREFIX . 'zoom_level_single'           => [
 				'type'            => 'text',
 				'label'           => esc_html_x( 'Default zoom level', 'option label', 'mapswap-for-the-events-calendar' ),
-				'tooltip'         => esc_html__( '0 = zoomed out; 18 = zoomed in.', 'mapswap-for-the-events-calendar' ),
+				'tooltip'         => esc_html__( '0 = zoomed out; 18 = zoomed in. Default: 15', 'mapswap-for-the-events-calendar' ),
 				'size'            => 'small',
 				'validation_type' => 'number_or_percent',
+				'can_be_empty'    => true,
+				'placeholder'     => '15',
 			],
 			Settings::OPTION_PREFIX . 'map_container_height_single' => [
 				'type'            => 'text',
@@ -104,6 +128,7 @@ class Settings {
 				'size'            => 'small',
 				'validation_type' => 'number_or_percent',
 				'can_be_empty'    => true,
+				'placeholder'     => '250',
 			],
 			Settings::OPTION_PREFIX . 'map_container_width_single'  => [
 				'type'            => 'text',
@@ -112,6 +137,7 @@ class Settings {
 				'size'            => 'small',
 				'validation_type' => 'number_or_percent',
 				'can_be_empty'    => true,
+				'placeholder'     => '250'
 			],
 		];
 
