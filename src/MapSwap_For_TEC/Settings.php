@@ -60,6 +60,7 @@ class Settings {
 	 * Adds a new section of fields to Events > Settings > Display tab > Maps subtab.
 	 *
 	 * @since 1.0.0
+	 * @since 1.1.0 Added placeholders for the settings.
 	 *
 	 * @return array
 	 */
