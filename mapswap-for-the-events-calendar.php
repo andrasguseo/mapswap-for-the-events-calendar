@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:         MapSwap for The Events Calendar
- * Description:         Replaces Google Maps with an alternative map provider in The Events Calendar.
+ * Description:         Replaces Google Maps with an alternative map provider in The Events Calendar. No API key required, no usage fees, no restrictions - just fast, reliable, and free maps powered by OpenStreetMap.
  * Version:             1.1.0
  * Author:              Andras Guseo
  * Author URI:          https://andrasguseo.com

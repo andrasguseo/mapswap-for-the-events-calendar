@@ -13,16 +13,56 @@ MapSwap for The Events Calendar replaces Google Maps with an alternative map pro
 
 == Description ==
 
-MapSwap for The Events Calendar replaces Google Maps with an alternative map provider on the single event pages. Currently, it supports OpenStreetMap.
+MapSwap for The Events Calendar replaces Google Maps with an alternative map provider on the single event pages. No API key required, no usage fees, no restrictions -- just fast, reliable, and free maps powered by OpenStreetMap.
 
 It requires the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin and [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/).
 
-Want to replace maps on Venue pages and the Map view as well? Download the beta version of MapSwap Pro at [andrasguseo.com/mapswap-for-the-events-calendar](https://andrasguseo.com/mapswap-for-the-events-calendar) and give it a try!
+<strong>Want to replace maps on Venue pages and the Map view as well? Download the beta version of MapSwap Pro for FREE at [andrasguseo.com/mapswap-for-the-events-calendar](https://andrasguseo.com/mapswap-for-the-events-calendar) and give it a try!</strong>
+
+= Why MapSwap? =
+
+* No API key needed - OpenStreetMap is free and open. No sign-ups, no billing, no quotas.
+* Privacy-friendly - OpenStreetMap doesn't track your visitors the way Google does.
+* Works with your existing events - MapSwap uses the venue addresses you've already entered. No data migration, no extra setup.
+* Easy to set up - Install, activate, enable. Your maps are swapped in seconds.
+* Easy to revert - Disable the setting or deactivate the plugin and Google Maps is back.
+
+= Features of MapSwap free version =
+
+Everything you need to replace Google Maps on single event pages.
+
+* Replaces Google Maps with OpenStreetMap on single event pages
+* Configurable zoom level and zoom controls
+* Adjustable map height and width
+* A link to OpenStreetMap instead of Google Maps
+* Compatible with any theme that supports The Events Calendar
+
+= Features of MapSwap Pro =
+
+Take it further. MapSwap Pro extends the free plugin to cover Events Calendar Pro features.
+
+* Replaces the Google Maps-powered Map view with OpenStreetMap
+* Replaces Google Maps on single Venue pages
+* Individual settings for Venue pages
 
 = Requirements =
 
 * [Leaflet Map](https://wordpress.org/plugins/leaflet-map/)
 * [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/)
+
+== External Services ==
+
+This plugin connects to OpenStreetMap to display an interactive map on single event pages. When a visitor views an event page with a venue address, the plugin generates a link to OpenStreetMap using that address so the map can be rendered.
+
+**What data is sent:** The venue address entered in The Events Calendar is included in the request URL sent to OpenStreetMap's servers.
+
+**When it is sent:** Every time a visitor loads a single event page that has a venue with an address.
+
+**Service provider:** OpenStreetMap Foundation
+
+* Website: https://www.openstreetmap.org
+* Terms of Use: https://wiki.osmfoundation.org/wiki/Terms_of_Use
+* Privacy Policy: https://wiki.osmfoundation.org/wiki/Privacy_Policy
 
 == Installation ==
 
@@ -64,7 +104,7 @@ Yes, the plugin replaces maps whether you're using [The Events Calendar](https:/
 
 = Does this work with The Events Calendar Pro? =
 
-Yes, it should work with both the free and Pro versions of [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). Note however, that this plugin does not replace maps provided by Events Calendar Pro (e.g., Map view, Venue page).
+Yes, it should work with both the free and Pro versions of [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/). Note however, that this plugin does not replace maps provided by Events Calendar Pro (e.g., Map view, Venue page). For those features, you'll also need to use the [MapSwap Pro](https://andrasguseo.com/mapswap-for-the-events-calendar) plugin.'
 
 = Will this work with my theme? =
 
@@ -85,20 +125,6 @@ No, this plugin only changes the map display. All venue data, geocoding, and loc
 = What if I experience problems? =
 
 We're always interested in your feedback. The [Support](https://wordpress.org/support/plugin/mapswap-for-the-events-calendar/) page is the best place to flag any issues. We do our best to respond to all issues.
-
-== External Services ==
-
-This plugin connects to OpenStreetMap to display an interactive map on single event pages. When a visitor views an event page with a venue address, the plugin generates a link to OpenStreetMap using that address so the map can be rendered.
-
-**What data is sent:** The venue address entered in The Events Calendar is included in the request URL sent to OpenStreetMap's servers.
-
-**When it is sent:** Every time a visitor loads a single event page that has a venue with an address.
-
-**Service provider:** OpenStreetMap Foundation
-
-* Website: https://www.openstreetmap.org
-* Terms of Use: https://wiki.osmfoundation.org/wiki/Terms_of_Use
-* Privacy Policy: https://wiki.osmfoundation.org/wiki/Privacy_Policy
 
 == Changelog ==
 
