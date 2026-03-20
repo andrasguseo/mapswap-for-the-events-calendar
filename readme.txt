@@ -17,7 +17,7 @@ MapSwap for The Events Calendar replaces Google Maps with an alternative map pro
 
 It requires the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin and [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/).
 
-<strong>Want to replace maps on Venue pages and the Map view as well? Download the beta version of MapSwap Pro for FREE at [andrasguseo.com/mapswap-for-the-events-calendar](https://andrasguseo.com/mapswap-for-the-events-calendar) and give it a try!</strong>
+<strong>Want to replace maps on Venue pages and the Map view as well? Download the beta version of [MapSwap Pro](https://andrasguseo.com/mapswap-for-the-events-calendar) for FREE and give it a try!</strong>
 
 = Why MapSwap? =
 
