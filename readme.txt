@@ -5,7 +5,7 @@ Tags: openstreetmap, map, events, calendar
 Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -16,6 +16,13 @@ MapSwap for The Events Calendar replaces Google Maps with an alternative map pro
 MapSwap for The Events Calendar replaces Google Maps with an alternative map provider on the single event pages. Currently, it supports OpenStreetMap.
 
 It requires the [Leaflet Map](https://wordpress.org/plugins/leaflet-map/) plugin and [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/).
+
+Want to replace maps on Venue pages and the Map view as well? Download the beta version of MapSwap Pro at [andrasguseo.com/mapswap-for-the-events-calendar](https://andrasguseo.com/mapswap-for-the-events-calendar) and give it a try!
+
+= Requirements =
+
+* [Leaflet Map](https://wordpress.org/plugins/leaflet-map/)
+* [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/)
 
 == Installation ==
 
@@ -94,6 +101,12 @@ This plugin connects to OpenStreetMap to display an interactive map on single ev
 * Privacy Policy: https://wiki.osmfoundation.org/wiki/Privacy_Policy
 
 == Changelog ==
+
+= [1.1.0] 2026-03-20 =
+
+* Feature - Added a setting to enable/disable the plugin functionality without having to deactivate it.
+* Feature - Added a Settings link on the Plugins page to allow easy access to the plugin settings.
+* Tweak - Added default placeholders for zoom level, map height, and map width settings.
 
 = [1.0.0] 2026-03-03 =
 
