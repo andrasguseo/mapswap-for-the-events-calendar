@@ -14,6 +14,10 @@ class Main {
 	 * @return void
 	 */
 	public function hook(): void {
+		if ( ! tribe_is_truthy( tribe_get_option( Settings::OPTION_PREFIX . 'general_enable', false ) ) ) {
+			return;
+		}
+
 		// Enqueue scripts
 		add_action( 'init', [ $this, 'common_setup' ] );
 
