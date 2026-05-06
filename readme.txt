@@ -5,7 +5,7 @@ Tags: openstreetmap, map, events, calendar
 Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 8.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
@@ -127,6 +127,10 @@ No, this plugin only changes the map display. All venue data, geocoding, and loc
 We're always interested in your feedback. The [Support](https://wordpress.org/support/plugin/mapswap-for-the-events-calendar/) page is the best place to flag any issues. We do our best to respond to all issues.
 
 == Changelog ==
+
+= [1.1.1] 2026-05-06 =
+
+* Fix - The default zoom level and map dimensions on single event/venue maps now apply correctly when a setting was saved as an empty string.
 
 = [1.1.0] 2026-03-20 =
 
